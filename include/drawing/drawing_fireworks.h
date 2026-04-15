@@ -32,4 +32,7 @@ void UpdateFireworks(FireworksEffect* fw, DWORD currentTime);
 void DrawFireworks(HDC hdc, FireworksEffect* fw);
 BOOL IsFireworksActive(FireworksEffect* fw);
 
+// Global fireworks state shared across rendering and timer event code
+extern FireworksEffect g_fireworks;
+
 #endif // DRAWING_FIREWORKS_H
